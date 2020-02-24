@@ -1,0 +1,8 @@
+.popup__row {
+  position: relative;
+  margin-top: 24px;
+}
+
+.popup__row:first-of-type {
+  margin-top: 0;
+}
