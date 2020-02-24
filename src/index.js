@@ -16,8 +16,9 @@ import {Api} from './pages/api.js';
 
 (function () {
 	function init() {
+		const path = NODE_ENV === 'development' ? 'http://praktikum.tk/cohort7' : 'https://praktikum.tk/cohort7';
 		const api = new Api({
-			baseUrl: 'https://95.216.175.5/cohort7',
+			baseUrl: path,
 			headers: {
 				authorization: '6b30a88a-d944-4136-a010-f6f35c17079f',
 				'Content-Type': 'application/json'
