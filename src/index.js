@@ -1,4 +1,11 @@
 import "./style.css";
+import './images/avatar.jpg';
+import './images/like-active.svg';
+import './images/like-inactive.svg';
+import './images/close.svg';
+import './images/logo.svg';
+import './vendor/fonts/Inter-Regular.woff2';
+import './vendor/fonts/Inter-Black.woff2';
 
 import {Card} from './pages/card.js';
 import {CardList} from './pages/card_list.js';
@@ -10,7 +17,7 @@ import {Api} from './pages/api.js';
 (function () {
 	function init() {
 		const api = new Api({
-			baseUrl: 'http://95.216.175.5/cohort7',
+			baseUrl: 'https://95.216.175.5/cohort7',
 			headers: {
 				authorization: '6b30a88a-d944-4136-a010-f6f35c17079f',
 				'Content-Type': 'application/json'
