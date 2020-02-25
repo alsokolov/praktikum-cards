@@ -2,6 +2,7 @@ import "./style.css";
 import './images/avatar.jpg';
 import './images/like-active.svg';
 import './images/like-inactive.svg';
+import './images/trash-icon.svg';
 import './images/close.svg';
 import './images/logo.svg';
 import './vendor/fonts/Inter-Regular.woff2';
