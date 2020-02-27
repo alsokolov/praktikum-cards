@@ -6,7 +6,9 @@ import './images/trash-icon.svg';
 import './images/close.svg';
 import './images/logo.svg';
 import './vendor/fonts/Inter-Regular.woff2';
+import './vendor/fonts/Inter-Regular.woff';
 import './vendor/fonts/Inter-Black.woff2';
+import './vendor/fonts/Inter-Black.woff';
 
 import {Card} from './pages/card.js';
 import {CardList} from './pages/card_list.js';
