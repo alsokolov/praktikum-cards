@@ -1,0 +1,9 @@
+.places-list__card {
+	margin: 0 9px 18px;
+}
+
+@supports (display: grid) {
+	.places-list__card {
+		margin: 0;
+	}
+}

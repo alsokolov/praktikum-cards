@@ -1,4 +1,4 @@
-# Webpack academic project/Учебный проект Яндекс.Практикум Mesto (v0.1.0)
+# Webpack academic project/Учебный проект Яндекс.Практикум Mesto (v0.1.1)
 
 Current version is available on [Github Pages](https://alsokolov.github.io/praktikum-cards/)
 

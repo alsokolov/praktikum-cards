@@ -15,7 +15,6 @@ export class UserInfo {
 		this.api.setUserInfo()
 		.then((result) => {
 			this.userInfo = result;
-			console.log('userInfo', this.userInfo);
 			this.avatarElement.style.backgroundImage = `url(${this.userInfo.avatar})`;
 			this.name.value = this.userInfo.name;
 			this.about.value = this.userInfo.about;
