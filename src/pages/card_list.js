@@ -13,7 +13,6 @@ export class CardList {
 		this.cardsArr = result;
 		this.api.getInitialCards().then((result) => {
 			this.cardsArr = result;
-			console.log(result, 'result');
 			if (this.cardsArr && Array.isArray(this.cardsArr) && this.cardsArr.length) {
 				this.cardsArr.forEach((item) => {
 					if (item.name && item.link) {
@@ -28,7 +27,6 @@ export class CardList {
 		});
 	}
 	addCard(name, link) {
-		console.log(link, 'link');
 		this.api.addCard(name, link).then((result) => {
 			this.card.create(result, this.container);
 		})

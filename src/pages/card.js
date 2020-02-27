@@ -18,6 +18,7 @@ export class Card {
 		data = data || {}; //
 		const card = document.createElement('div');
 		card.classList.add('place-card');
+		card.classList.add('places-list__card'); //IE 11 не поддерживает несколько парраметров в add
 		card.innerHTML = `
 			<div class="place-card__image"></div>
 			<div class="place-card__description">
@@ -64,7 +65,6 @@ export class Card {
 				});
 				event.target.classList.add('place-card__like-icon_liked');
 			}
-			console.log(cardId);
 		}
 	}
 

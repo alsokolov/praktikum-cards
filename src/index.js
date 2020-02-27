@@ -1,3 +1,4 @@
+import 'whatwg-fetch'
 import "./style.css";
 import './images/avatar.jpg';
 import './images/like-active.svg';
@@ -16,6 +17,17 @@ import {Popup} from './pages/popup.js';
 import {UserInfo} from './pages/user_info.js';
 import {FormValidator} from './pages/form_validator.js';
 import {Api} from './pages/api.js';
+
+//closest polyfill
+(function(ELEMENT) {
+    ELEMENT.matches = ELEMENT.matches || ELEMENT.mozMatchesSelector || ELEMENT.msMatchesSelector || ELEMENT.oMatchesSelector || ELEMENT.webkitMatchesSelector;
+    ELEMENT.closest = ELEMENT.closest || function closest(selector) {
+        if (!this) return null;
+        if (this.matches(selector)) return this;
+        if (!this.parentElement) {return null}
+        else return this.parentElement.closest(selector)
+      };
+}(Element.prototype));
 
 (function () {
 	function init() {
